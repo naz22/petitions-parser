@@ -1,0 +1,8 @@
+# IntelliJ
+.idea/
+
+
+# Environment
+venv/Lib/
+venv/Scripts/
+venv/pyvenv.cfg
