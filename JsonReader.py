@@ -4,6 +4,7 @@ with open("data/241584.json") as json_data:
     data = json.load(json_data)
     constitution, mp, sig_count, breakpoints, sep = "Constitution", "Member of Parliament", "Signature Count", "||", \
                                                     "-" * 113
+    print(f'Petition ' + str(data['data']['id']) + ': ' + data['data']['attributes']['action'])
     print("%-45s %-3s %-35s %-3s %-20s %-3s" % (constitution, breakpoints, mp, breakpoints, sig_count, breakpoints))
     print(sep)
     for r in data['data']['attributes']['signatures_by_constituency']:
